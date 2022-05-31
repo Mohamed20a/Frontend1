@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.navbar{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color:#617a7c;
+    color: honeydew;
+    padding: 1px;
+    display: flex;
+}
+.navbar-nav ul li:hover::after{
+    width: 100%;
+}
+
+h1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+p{
+    font-family: Tahoma, Verdana, sans-serif;
+    
+}
+body{
+    background-image: url(photo/2267-7.gif);
+    width: 100%;
+   
+}
+#div2{
+    background-image: url(photo/2267-7.gif);
+}
+.lead{
+    color: white;
+}
+#p5{
+    color: white;
+    font-size: 25px;
+}
+.my-4{
+    color: white;
+}
+.form-control {
+    background: #afb8c0;
+    border: rgb(0, 143, 24) 2px solid;
+}
+#card2{
+    background-image: url(photo/2267-7.gif);
+}
+.display-4{
+    color: rgb(78, 184, 184);
+}
+.display-4:hover{
+    color: rgb(255, 0, 0);
+    font-size: 60px;
+}
+.text{
+    color: rgb(78, 184, 184);
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 40px;
+}
+h5{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 25px;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.card:hover{
+    box-shadow: 1px 1px rgb(78, 78, 78),
+    2px 2px rgb(71, 71, 71),
+    3px 3px rgb(68, 67, 67),
+    4px 4px rgb(63, 63, 63),
+    5px 5px rgb(59, 59, 59),
+    6px 6px rgb(51, 51, 51),
+    7px 7px rgb(44, 44, 44),
+    8px 8px rgb(36, 36, 36),
+    9px 9px rgb(22, 22, 22),
+    10px 10px rgb(12, 12, 12),
+    10px 10px rgb(0, 0, 0, .7);
+}
+
+
+ ul{
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    user-select: none;
+    pointer-events: none; 
+}
+#navbarSupportedContent ul li{
+    position: relative;
+    margin-left: .5rem;
+    margin-right: .5rem;
+    pointer-events: all;
+}
+#navbarSupportedContent a::before{
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 4px;
+    background: rgb(43, 164, 194);
+    left: 50%;
+    bottom: -8px;
+    border-radius: 5px;
+}
+#navbarSupportedContent li:hover a::before{
+    width: 100%;
+    left: 0;
+    transition: .2s all;
+}
+#navbarSupportedContent a{
+    color: rgb(15, 15, 15);
+    text-decoration:none;
+    transition: .2s;
+    font-size: 20px;
+}
+ .collapse ul:hover a{
+    color: rgb(211, 211, 211);
+}
+.collapse ul:hover a:hover{
+    color: #000;
+}

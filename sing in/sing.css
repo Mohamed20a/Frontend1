@@ -1,0 +1,101 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family:sans-serif;
+    background-image: url(PicsArt_11-29-11.04.40.jpg) ; 
+}
+.box h1{
+    color: white;
+    text-transform: uppercase;
+    font-weight:500 ;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(151, 20, 20);
+    animation-name: change-color;
+    animation-duration: 8s;
+    animation-delay: 1s;
+    z-index: 2;
+    font-size: 3rem;
+
+}
+.box h1:hover{
+    text-shadow: 1px 1px rgb(128, 107, 22),
+    2px 2px rgb(128, 107, 39),
+    3px 3px rgb(114, 95, 31),
+    4px 4px rgb(106, 87, 26),
+    5px 5px rgb(104, 86, 25),
+    6px 6px rgb(90, 75, 21),
+    7px 7px rgb(97, 80, 25),
+    8px 8px rgb(89, 74, 25),
+    9px 9px rgb(87, 72, 23),
+    10px 10px rgb(70, 57, 16),
+    10px 10px rgb(0, 0, 0, .7);
+}
+.box{
+    width: 300px;
+    padding: 40px;
+    position: absolute;
+    border: rgb(65, 146, 170) 2px solid;
+    border-radius: 24px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: #2d3436;
+    text-align: center;
+
+}
+.box input[type = "text"],.box input[type ="password"]{
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid rgb(65, 146, 170);
+    padding: 14px 10px;
+    width: 200px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+}
+.box input[type = "text"]:focus, .box input[type = "password"]:focus{
+    width: 280px;
+    border-color: #20df76;
+} 
+.box input[type = "submit"]{
+    border: 0;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #33974cad;
+    padding: 14px 10px;
+    width: 100px;
+    outline: none;
+    background: #2d3436;
+    color: rgb(255, 255, 255);
+    border-radius: 24px;
+    transition: 0.25s;
+    cursor: pointer;
+}
+.box :hover[type = "submit"]{
+    background: #6ba8c5;
+
+
+}
+
+@keyframes change-color {
+    0%{
+        color:rgb(151, 20, 20);
+    }
+    25%{
+        color:rgb(130, 223, 130);
+    }
+    50%{
+        color: rgb(181, 94, 202);
+    }
+    75%{
+        color:rgb(77, 201, 170);
+    }
+    100%{
+        color:rgb(151, 20, 20);
+    }
+}
